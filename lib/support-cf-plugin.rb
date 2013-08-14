@@ -1,0 +1,1 @@
+require 'support-cf-plugin/plugin'
