@@ -85,12 +85,5 @@ module SupportCfPlugin
 
     end
 
-    def login_as_uaa_user(user, password)
-      begin
-        invoke :login, :username => user, :password => password
-      rescue CF::UserFriendlyError, /There are no (organizations|spaces)/
-      end
-    end
-
   end
 end
